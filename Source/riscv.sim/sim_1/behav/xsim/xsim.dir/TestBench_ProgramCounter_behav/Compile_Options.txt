@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "TestBench_ProgramCounter_behav" "xil_defaultlib.TestBench_ProgramCounter" -log "elaborate.log" 

@@ -1,0 +1,33 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot TestBench_Processor_behav xil_defaultlib.TestBench_Processor -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behaviandal of entity xil_defaultlib.ClkCounter [clkcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.WrongBranchCounter [wrongbranchcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.BranchPredictioner [branchpredictioner_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Memory [instruction_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transfer_Layer_1to2 [transfer_layer_1to2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_File [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.DataForwarder [dataforwarder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Immediate_Expander [immediate_expander_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transfer_Layer_2To3 [transfer_layer_2to3_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transfer_Layer_3To4 [transfer_layer_3to4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Data_Memory [data_memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.Transfer_Layer_4To5 [transfer_layer_4to5_default]
+Compiling architecture behavioral of entity xil_defaultlib.Processor [processor_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_processor
+Built simulation snapshot TestBench_Processor_behav

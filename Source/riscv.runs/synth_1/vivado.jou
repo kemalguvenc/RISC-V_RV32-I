@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jun 12 10:04:58 2024
+# Process ID: 19021
+# Current directory: /home/kemal/Desktop/riscv/riscv.runs/synth_1
+# Command line: vivado -log Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+# Log file: /home/kemal/Desktop/riscv/riscv.runs/synth_1/Processor.vds
+# Journal file: /home/kemal/Desktop/riscv/riscv.runs/synth_1/vivado.jou
+# Running On: kemal-root, OS: Linux, CPU Frequency: 3183.304 MHz, CPU Physical cores: 4, Host memory: 16544 MB
+#-----------------------------------------------------------
+source Processor.tcl -notrace

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBench_BranchPredictioner_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestBench_BranchPredictioner" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="51.356 ns"></ZoomStartTime>
+      <ZoomEndTime time="366.925 ns"></ZoomEndTime>
+      <Cursor1Time time="468.023 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="139"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/instruction">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/programCounter">
+      <obj_property name="ElementShortName">programCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">programCounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/newProgramCounter">
+      <obj_property name="ElementShortName">newProgramCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">newProgramCounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/programCounterSelector">
+      <obj_property name="ElementShortName">programCounterSelector</obj_property>
+      <obj_property name="ObjectShortName">programCounterSelector</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/kill_Instructions">
+      <obj_property name="ElementShortName">kill_Instructions</obj_property>
+      <obj_property name="ObjectShortName">kill_Instructions</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/stopPipeline">
+      <obj_property name="ElementShortName">stopPipeline</obj_property>
+      <obj_property name="ObjectShortName">stopPipeline</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/o_newProgramCounter">
+      <obj_property name="ElementShortName">o_newProgramCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_newProgramCounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/otherProgramCounters">
+      <obj_property name="ElementShortName">otherProgramCounters[2:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">otherProgramCounters[2:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/branchResult">
+      <obj_property name="ElementShortName">branchResult</obj_property>
+      <obj_property name="ObjectShortName">branchResult</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/branchCounter">
+      <obj_property name="ElementShortName">branchCounter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">branchCounter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/oldPredictions">
+      <obj_property name="ElementShortName">oldPredictions[2:0]</obj_property>
+      <obj_property name="ObjectShortName">oldPredictions[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/saturatingCounter">
+      <obj_property name="ElementShortName">saturatingCounter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">saturatingCounter[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/backupRD">
+      <obj_property name="ElementShortName">backupRD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">backupRD[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_BranchPredictioner/BP/backupCounter">
+      <obj_property name="ElementShortName">backupCounter[1:0]</obj_property>
+      <obj_property name="ObjectShortName">backupCounter[1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_BranchPredictioner/BP/temp">
+      <obj_property name="ElementShortName">temp</obj_property>
+      <obj_property name="ObjectShortName">temp</obj_property>
+   </wvobject>
+</wave_config>

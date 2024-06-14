@@ -1,0 +1,7 @@
+Running: xsim.dir/TestBench_BranchPredictioner_behav/xsimk -simmode gui -wdb TestBench_BranchPredictioner_behav.wdb -simrunnum 0 -socket 57115
+Design successfully loaded
+Design Loading Memory Usage: 23568 KB (Peak: 24156 KB)
+Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 113504 KB (Peak: 162836 KB)
+Simulation CPU Usage: 60 ms

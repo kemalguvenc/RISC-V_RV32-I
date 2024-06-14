@@ -1,0 +1,526 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jun 12 10:04:58 2024
+# Process ID: 19021
+# Current directory: /home/kemal/Desktop/riscv/riscv.runs/synth_1
+# Command line: vivado -log Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+# Log file: /home/kemal/Desktop/riscv/riscv.runs/synth_1/Processor.vds
+# Journal file: /home/kemal/Desktop/riscv/riscv.runs/synth_1/vivado.jou
+# Running On: kemal-root, OS: Linux, CPU Frequency: 3183.304 MHz, CPU Physical cores: 4, Host memory: 16544 MB
+#-----------------------------------------------------------
+source Processor.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1322.043 ; gain = 0.023 ; free physical = 6221 ; free virtual = 12548
+Command: read_checkpoint -auto_incremental -incremental /home/kemal/Desktop/riscv/riscv.srcs/utils_1/imports/synth_1/Instruction_Memory.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/kemal/Desktop/riscv/riscv.srcs/utils_1/imports/synth_1/Instruction_Memory.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Processor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-1810] synth_design options have changed between reference and incremental; A full resynthesis will be run
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19066
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2018.891 ; gain = 402.715 ; free physical = 5281 ; free virtual = 11588
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Processor' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:19]
+INFO: [Synth 8-3491] module 'ClkCounter' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/ClkCounter.vhd:6' bound to instance 'CC' of component 'ClkCounter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:460]
+INFO: [Synth 8-638] synthesizing module 'ClkCounter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/ClkCounter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ClkCounter' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/ClkCounter.vhd:16]
+INFO: [Synth 8-3491] module 'WrongBranchCounter' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/WrongBranchCounter.vhd:6' bound to instance 'WBC' of component 'WrongBranchCounter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:468]
+INFO: [Synth 8-638] synthesizing module 'WrongBranchCounter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/WrongBranchCounter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'WrongBranchCounter' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/WrongBranchCounter.vhd:16]
+INFO: [Synth 8-3491] module 'BranchPredictioner' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/BranchPredictioner.vhd:6' bound to instance 'BP' of component 'BranchPredictioner' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:477]
+INFO: [Synth 8-638] synthesizing module 'BranchPredictioner' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/BranchPredictioner.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'BranchPredictioner' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/BranchPredictioner.vhd:20]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Program_Counter.vhd:6' bound to instance 'PC' of component 'Program_Counter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:489]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Program_Counter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Program_Counter.vhd:16]
+INFO: [Synth 8-3491] module 'Instruction_Memory' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Instruction_Memory.vhd:6' bound to instance 'IM' of component 'Instruction_Memory' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:497]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Memory' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Instruction_Memory.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Memory' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Instruction_Memory.vhd:14]
+INFO: [Synth 8-3491] module 'Transfer_Layer_1to2' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_1to2.vhd:6' bound to instance 'TT_12' of component 'Transfer_Layer_1to2' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:503]
+INFO: [Synth 8-638] synthesizing module 'Transfer_Layer_1to2' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_1to2.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Transfer_Layer_1to2' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_1to2.vhd:21]
+INFO: [Synth 8-3491] module 'Control_Unit' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:6' bound to instance 'CU' of component 'Control_Unit' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:515]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:25]
+INFO: [Synth 8-3491] module 'Register_File' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Register_File.vhd:6' bound to instance 'RF' of component 'Register_File' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:532]
+INFO: [Synth 8-638] synthesizing module 'Register_File' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Register_File.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Register_File' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Register_File.vhd:21]
+INFO: [Synth 8-3491] module 'DataForwarder' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/DataForwarder.vhd:6' bound to instance 'DF' of component 'DataForwarder' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:545]
+INFO: [Synth 8-638] synthesizing module 'DataForwarder' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/DataForwarder.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'DataForwarder' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/DataForwarder.vhd:27]
+INFO: [Synth 8-3491] module 'Immediate_Expander' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Immediate_Expander.vhd:6' bound to instance 'IE' of component 'Immediate_Expander' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:564]
+INFO: [Synth 8-638] synthesizing module 'Immediate_Expander' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Immediate_Expander.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Immediate_Expander' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Immediate_Expander.vhd:15]
+INFO: [Synth 8-3491] module 'Transfer_Layer_2To3' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_2To3.vhd:6' bound to instance 'TL_23' of component 'Transfer_Layer_2To3' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:571]
+INFO: [Synth 8-638] synthesizing module 'Transfer_Layer_2To3' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_2To3.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Transfer_Layer_2To3' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_2To3.vhd:41]
+INFO: [Synth 8-3491] module 'ALU' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:6' bound to instance 'ALUU' of component 'ALU' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:604]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:17]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:46]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:47]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:53]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:54]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:60]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:17]
+INFO: [Synth 8-3491] module 'Transfer_Layer_3To4' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_3To4.vhd:6' bound to instance 'TL_34' of component 'Transfer_Layer_3To4' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:613]
+INFO: [Synth 8-638] synthesizing module 'Transfer_Layer_3To4' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_3To4.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Transfer_Layer_3To4' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_3To4.vhd:33]
+INFO: [Synth 8-3491] module 'Data_Memory' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:6' bound to instance 'DM' of component 'Data_Memory' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:638]
+INFO: [Synth 8-638] synthesizing module 'Data_Memory' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:19]
+INFO: [Synth 8-226] default block is never used [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:45]
+INFO: [Synth 8-226] default block is never used [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:108]
+INFO: [Synth 8-226] default block is never used [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:120]
+INFO: [Synth 8-226] default block is never used [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'Data_Memory' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:19]
+INFO: [Synth 8-3491] module 'Transfer_Layer_4To5' declared at '/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_4To5.vhd:6' bound to instance 'TL_45' of component 'Transfer_Layer_4To5' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:649]
+INFO: [Synth 8-638] synthesizing module 'Transfer_Layer_4To5' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_4To5.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Transfer_Layer_4To5' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Transfer_Layer_4To5.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Processor' (0#1) [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/Processor.vhd:19]
+WARNING: [Synth 8-7129] Port i_address[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[10] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2131.828 ; gain = 515.652 ; free physical = 5137 ; free virtual = 11449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2149.641 ; gain = 533.465 ; free physical = 5137 ; free virtual = 11449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2149.641 ; gain = 533.465 ; free physical = 5137 ; free virtual = 11449
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2149.641 ; gain = 0.000 ; free physical = 5137 ; free virtual = 11449
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kemal/Desktop/riscv/riscv.srcs/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [/home/kemal/Desktop/riscv/riscv.srcs/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.391 ; gain = 0.000 ; free physical = 5125 ; free virtual = 11436
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2292.426 ; gain = 0.000 ; free physical = 5125 ; free virtual = 11436
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5111 ; free virtual = 11428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5111 ; free virtual = 11428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5111 ; free virtual = 11428
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5103 ; free virtual = 11426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5103 ; free virtual = 11426
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'otherProgramCounters_reg[0]' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/BranchPredictioner.vhd:94]
+WARNING: [Synth 8-327] inferring latch for variable 'o_operationSelecter_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'o_firstOperandSelectorForAlu_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:43]
+WARNING: [Synth 8-327] inferring latch for variable 'o_secondOperandSelectorForAlu_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'o_dataOfDestinationRegisterSelector_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:35]
+WARNING: [Synth 8-327] inferring latch for variable 'o_typeOfMemoryData_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:137]
+WARNING: [Synth 8-327] inferring latch for variable 'o_sizeOfMemoryData_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:138]
+WARNING: [Synth 8-327] inferring latch for variable 'o_instructionType_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd:40]
+WARNING: [Synth 8-327] inferring latch for variable 'o_registerDataForFirst_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/DataForwarder.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'o_registerDataForSecond_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/new/DataForwarder.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'o_output_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:29]
+WARNING: [Synth 8-327] inferring latch for variable 'o_branch_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/ALU.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'o_data_reg' [/home/kemal/Desktop/riscv/riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd:78]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5090 ; free virtual = 11421
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : synth_design options have changed between reference and incremental
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 35    
+	   2 Input    5 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 47    
+	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 5     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 151   
+	   3 Input   32 Bit        Muxes := 30    
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 11    
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	  42 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	  27 Input    2 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 172   
+	   7 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 9     
+	  25 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 3     
+	  18 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 31    
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port i_address[31] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[30] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[29] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[28] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[27] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[26] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[25] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[24] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[23] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[22] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[21] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[20] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[19] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[18] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[17] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[16] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_address[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[31] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[30] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[29] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[28] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[27] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[26] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[25] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[24] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[23] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[22] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[21] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[20] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[19] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[18] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[17] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[16] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_dataAdress[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (o_dataOfDestinationRegisterSelector_reg[1]) is unused and will be removed from module Control_Unit.
+WARNING: [Synth 8-3332] Sequential element (o_instructionType_reg[1]) is unused and will be removed from module Control_Unit.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5073 ; free virtual = 11397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------+------------+---------------+----------------+
+|Module Name        | RTL Object | Depth x Width | Implemented As | 
++-------------------+------------+---------------+----------------+
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
+|Instruction_Memory | memory[0]  | 1024x7        | LUT            | 
++-------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|DM          | memory3_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory0_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory1_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory2_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
++------------+-------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|DM          | memory3_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory0_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory1_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|DM          | memory2_reg | Implied   | 256 x 8              | RAM256X1S x 8  | 
++------------+-------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     7|
+|2     |CARRY4    |    55|
+|3     |LUT1      |     3|
+|4     |LUT2      |    76|
+|5     |LUT3      |   166|
+|6     |LUT4      |    91|
+|7     |LUT5      |   386|
+|8     |LUT6      |  1111|
+|9     |MUXF7     |   137|
+|10    |RAM256X1S |    32|
+|11    |FDRE      |   955|
+|12    |LD        |   203|
+|13    |LDC       |     1|
+|14    |LDP       |     1|
+|15    |IBUF      |     3|
+|16    |OBUF      |    37|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2292.426 ; gain = 533.465 ; free physical = 5069 ; free virtual = 11398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2292.426 ; gain = 676.250 ; free physical = 5069 ; free virtual = 11398
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2292.426 ; gain = 0.000 ; free physical = 5358 ; free virtual = 11687
+INFO: [Netlist 29-17] Analyzing 429 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2292.426 ; gain = 0.000 ; free physical = 5358 ; free virtual = 11687
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 237 instances were transformed.
+  LD => LDCE: 203 instances
+  LDC => LDCE: 1 instance 
+  LDP => LDPE: 1 instance 
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+
+Synth Design complete | Checksum: dbd9c540
+INFO: [Common 17-83] Releasing license: Synthesis
+75 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:02 . Memory (MB): peak = 2292.426 ; gain = 970.383 ; free physical = 5357 ; free virtual = 11686
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1861.148; main = 1533.188; forked = 378.827
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3257.645; main = 2292.395; forked = 997.266
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.402 ; gain = 0.000 ; free physical = 5357 ; free virtual = 11686
+INFO: [Common 17-1381] The checkpoint '/home/kemal/Desktop/riscv/riscv.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 12 10:06:11 2024...

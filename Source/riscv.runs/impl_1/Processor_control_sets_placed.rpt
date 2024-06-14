@@ -1,0 +1,133 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Jun 12 10:06:48 2024
+| Host         : kemal-root running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_control_sets -verbose -file Processor_control_sets_placed.rpt
+| Design       : Processor
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    55 |
+|    Minimum number of control sets                        |    55 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   184 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    55 |
+| >= 0 to < 4        |    26 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    27 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             612 |          226 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              54 |           33 |
+| Yes          | No                    | No                     |             496 |          232 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              14 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|            Clock Signal           |                 Enable Signal                |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------+----------------------------------------------+----------------------------------+------------------+----------------+--------------+
+|  TT_12/o_instruction_reg[14]_1    |                                              | TT_12/o_instruction_reg[0]_0     |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[1]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[0]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[6]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[5]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[3]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[4]_i_1_n_1 |                1 |              1 |         1.00 |
+|  TL_23/o_branch11_out             |                                              |                                  |                1 |              1 |         1.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | WBC/o_7SegmentDisplay[2]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/p_14_in                       |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay13           |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay1017_out     |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/p_4_in                        |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay1015_out     |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay2[1]_i_1_n_1 |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay209_out      |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay207_out      |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay205_out      |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay20           |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay23           |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay1[1]_i_1_n_1 |                1 |              1 |         1.00 |
+|  TT_12/o_instruction_reg[4]_2     |                                              |                                  |                1 |              1 |         1.00 |
+|  TT_12/o_typeOfMemoryData16_out   |                                              |                                  |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay1019_out     |                1 |              1 |         1.00 |
+|  clk_BUFG                         |                                              | CC/o_7SegmentDisplay10           |                1 |              1 |         1.00 |
+|  TT_12/o_instruction_reg[14]_0[0] |                                              |                                  |                1 |              2 |         2.00 |
+|  clk_BUFG                         | BP/o_kill_Instructions                       | BP/SR[0]                         |                2 |              7 |         3.50 |
+|  TT_12/E[0]                       |                                              |                                  |                3 |              7 |         2.33 |
+|  branchCounter[0]                 |                                              |                                  |               12 |             32 |         2.67 |
+|  clk_BUFG                         | TL_34/memory0                                |                                  |                8 |             32 |         4.00 |
+|  clk_BUFG                         | TL_34/memory1                                |                                  |                8 |             32 |         4.00 |
+|  clk_BUFG                         | TL_34/memory2                                |                                  |                8 |             32 |         4.00 |
+|  clk_BUFG                         | TL_34/memory3                                |                                  |                8 |             32 |         4.00 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_2[0]  |                                  |               16 |             32 |         2.00 |
+|  temp__0                          |                                              |                                  |               22 |             32 |         1.45 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_12[0] |                                  |               16 |             32 |         2.00 |
+|  DMn_1_1651_BUFG                  |                                              |                                  |               16 |             32 |         2.00 |
+|  o_dataForwardForSecond_BUFG      |                                              |                                  |               16 |             32 |         2.00 |
+|  o_dataForwardForFirst_BUFG       |                                              |                                  |               14 |             32 |         2.29 |
+|  n_0_884_BUFG                     |                                              |                                  |                8 |             32 |         4.00 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_0[0]  |                                  |               18 |             32 |         1.78 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_1[0]  |                                  |               15 |             32 |         2.13 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_11[0] |                                  |               10 |             32 |         3.20 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_10[0] |                                  |               12 |             32 |         2.67 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_13[0] |                                  |               18 |             32 |         1.78 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_3[0]  |                                  |               14 |             32 |         2.29 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_4[0]  |                                  |               17 |             32 |         1.88 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_5[0]  |                                  |               21 |             32 |         1.52 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_6[0]  |                                  |               20 |             32 |         1.60 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_7[0]  |                                  |               10 |             32 |         3.20 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_8[0]  |                                  |               16 |             32 |         2.00 |
+|  clk_BUFG                         | TL_45/o_writeToDestinationRegister_reg_9[0]  |                                  |               12 |             32 |         2.67 |
+|  clk_BUFG                         |                                              | i_reset_IBUF                     |               18 |             39 |         2.17 |
+|  clk_BUFG                         | TL_45/E[0]                                   |                                  |               17 |             48 |         2.82 |
+|  clk_BUFG                         |                                              |                                  |              131 |            408 |         3.11 |
++-----------------------------------+----------------------------------------------+----------------------------------+------------------+----------------+--------------+
+
+

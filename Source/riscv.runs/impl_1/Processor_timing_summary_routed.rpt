@@ -1,0 +1,1149 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Wed Jun 12 10:07:21 2024
+| Host         : kemal-root running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Processor_timing_summary_routed.rpt -pb Processor_timing_summary_routed.pb -rpx Processor_timing_summary_routed.rpx -warn_on_violation
+| Design       : Processor
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     1000        
+LUTAR-1    Warning           LUT drives async reset alert    1           
+TIMING-20  Warning           Non-clocked latch               205         
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (5284)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (3031)
+5. checking no_input_delay (1)
+6. checking no_output_delay (37)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (5284)
+---------------------------
+ There are 1099 register/latch pins with no clock driven by root clock pin: i_clk (HIGH)
+
+ There are 1099 register/latch pins with no clock driven by root clock pin: i_onOff (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: ALUU/o_branch_reg/Q (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: BP/branchCounter_reg[2]/Q (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: BP/oldPredictions_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: PC/o_instructionAdress_reg[9]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_dataOfDestinationRegisterSelector_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_destinationRegister_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_destinationRegister_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_destinationRegister_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_destinationRegister_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_firstOperandSelectorForAlu_reg_rep__0/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_immediate_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_immediate_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_immediate_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_immediate_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_immediate_reg[4]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_killInstruction_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_operationSelecter_reg[0]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: TL_23/o_operationSelecter_reg[1]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: TL_23/o_operationSelecter_reg[2]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: TL_23/o_operationSelecter_reg[3]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: TL_23/o_operationSelecter_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_rs2_reg[0]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_rs2_reg[1]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_rs2_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_rs2_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_rs2_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_23/o_secondOperandSelectorForAlu_reg[0]_rep__0/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_23/o_writeToDestinationRegister_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_34/o_destinationRegister_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_34/o_destinationRegister_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_34/o_destinationRegister_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_34/o_destinationRegister_reg[4]/Q (HIGH)
+
+ There are 96 register/latch pins with no clock driven by root clock pin: TL_34/o_killInstruction_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_34/o_writeToDestinationRegister_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TL_34/o_writeToMemory_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_destinationRegister_reg[0]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_destinationRegister_reg[1]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_destinationRegister_reg[2]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_destinationRegister_reg[4]/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_killInstruction_reg/Q (HIGH)
+
+ There are 64 register/latch pins with no clock driven by root clock pin: TL_45/o_writeToDestinationRegister_reg/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[12]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[13]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[14]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[15]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[16]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[17]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[19]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[1]/Q (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[20]/Q (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[21]/Q (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[22]/Q (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[23]/Q (HIGH)
+
+ There are 40 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[24]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[25]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[27]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[28]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[29]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[2]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[30]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[31]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[4]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[5]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: TT_12/o_instruction_reg[6]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (3031)
+---------------------------------------------------
+ There are 3031 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (37)
+--------------------------------
+ There are 37 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 3068          inf        0.000                      0                 3068           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          3068 Endpoints
+Min Delay          3068 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[29]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.688ns  (logic 4.352ns (27.741%)  route 11.336ns (72.259%))
+  Logic Levels:           20  (CARRY4=7 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.365 r  TL_23/o_output_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.365    TL_23/o_output_reg[27]_i_1_n_1
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.688 r  TL_23/o_output_reg[31]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.688    ALUU/out[29]
+    SLICE_X30Y67         LDCE                                         r  ALUU/o_output_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[31]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.680ns  (logic 4.344ns (27.705%)  route 11.336ns (72.295%))
+  Logic Levels:           20  (CARRY4=7 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.365 r  TL_23/o_output_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.365    TL_23/o_output_reg[27]_i_1_n_1
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.680 r  TL_23/o_output_reg[31]_i_1/O[3]
+                         net (fo=1, routed)           0.000    15.680    ALUU/out[31]
+    SLICE_X30Y67         LDCE                                         r  ALUU/o_output_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[30]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.604ns  (logic 4.268ns (27.352%)  route 11.336ns (72.648%))
+  Logic Levels:           20  (CARRY4=7 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.365 r  TL_23/o_output_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.365    TL_23/o_output_reg[27]_i_1_n_1
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    15.604 r  TL_23/o_output_reg[31]_i_1/O[2]
+                         net (fo=1, routed)           0.000    15.604    ALUU/out[30]
+    SLICE_X30Y67         LDCE                                         r  ALUU/o_output_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[28]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.584ns  (logic 4.248ns (27.259%)  route 11.336ns (72.741%))
+  Logic Levels:           20  (CARRY4=7 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.365 r  TL_23/o_output_reg[27]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.365    TL_23/o_output_reg[27]_i_1_n_1
+    SLICE_X30Y67         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.584 r  TL_23/o_output_reg[31]_i_1/O[0]
+                         net (fo=1, routed)           0.000    15.584    ALUU/out[28]
+    SLICE_X30Y67         LDCE                                         r  ALUU/o_output_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[25]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.571ns  (logic 4.235ns (27.198%)  route 11.336ns (72.802%))
+  Logic Levels:           19  (CARRY4=6 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.571 r  TL_23/o_output_reg[27]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.571    ALUU/out[25]
+    SLICE_X30Y66         LDCE                                         r  ALUU/o_output_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.563ns  (logic 4.227ns (27.161%)  route 11.336ns (72.839%))
+  Logic Levels:           19  (CARRY4=6 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.563 r  TL_23/o_output_reg[27]_i_1/O[3]
+                         net (fo=1, routed)           0.000    15.563    ALUU/out[27]
+    SLICE_X30Y66         LDCE                                         r  ALUU/o_output_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[26]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.487ns  (logic 4.151ns (26.804%)  route 11.336ns (73.196%))
+  Logic Levels:           19  (CARRY4=6 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    15.487 r  TL_23/o_output_reg[27]_i_1/O[2]
+                         net (fo=1, routed)           0.000    15.487    ALUU/out[26]
+    SLICE_X30Y66         LDCE                                         r  ALUU/o_output_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[24]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.467ns  (logic 4.131ns (26.709%)  route 11.336ns (73.291%))
+  Logic Levels:           19  (CARRY4=6 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.248 r  TL_23/o_output_reg[23]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.248    TL_23/o_output_reg[23]_i_1_n_1
+    SLICE_X30Y66         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.467 r  TL_23/o_output_reg[27]_i_1/O[0]
+                         net (fo=1, routed)           0.000    15.467    ALUU/out[24]
+    SLICE_X30Y66         LDCE                                         r  ALUU/o_output_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[21]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.454ns  (logic 4.118ns (26.647%)  route 11.336ns (73.353%))
+  Logic Levels:           18  (CARRY4=5 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.454 r  TL_23/o_output_reg[23]_i_1/O[1]
+                         net (fo=1, routed)           0.000    15.454    ALUU/out[21]
+    SLICE_X30Y65         LDCE                                         r  ALUU/o_output_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 ALUU/temp_reg[1]/G
+                            (positive level-sensitive latch)
+  Destination:            ALUU/o_output_reg[23]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        15.446ns  (logic 4.110ns (26.609%)  route 11.336ns (73.391%))
+  Logic Levels:           18  (CARRY4=5 LDCE=1 LUT2=1 LUT5=3 LUT6=8)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y59         LDCE                         0.000     0.000 r  ALUU/temp_reg[1]/G
+    SLICE_X35Y59         LDCE (EnToQ_ldce_G_Q)        0.559     0.559 r  ALUU/temp_reg[1]/Q
+                         net (fo=8, routed)           1.156     1.715    ALUU/Q[1]
+    SLICE_X38Y58         LUT5 (Prop_lut5_I2_O)        0.150     1.865 r  ALUU/o_output_reg[7]_i_186/O
+                         net (fo=4, routed)           0.818     2.683    ALUU/o_output_reg[7]_i_186_n_1
+    SLICE_X40Y58         LUT6 (Prop_lut6_I3_O)        0.328     3.011 r  ALUU/o_output_reg[7]_i_175/O
+                         net (fo=4, routed)           1.123     4.134    ALUU/o_output_reg[7]_i_175_n_1
+    SLICE_X43Y60         LUT6 (Prop_lut6_I0_O)        0.124     4.258 r  ALUU/o_output_reg[7]_i_164/O
+                         net (fo=2, routed)           0.569     4.827    ALUU/o_output_reg[7]_i_164_n_1
+    SLICE_X44Y62         LUT6 (Prop_lut6_I0_O)        0.124     4.951 r  ALUU/o_output_reg[7]_i_147/O
+                         net (fo=4, routed)           0.842     5.793    ALUU/o_output_reg[7]_i_147_n_1
+    SLICE_X44Y63         LUT5 (Prop_lut5_I4_O)        0.118     5.911 r  ALUU/o_output_reg[7]_i_128/O
+                         net (fo=10, routed)          0.988     6.898    ALUU/o_output_reg[7]_i_128_n_1
+    SLICE_X44Y66         LUT6 (Prop_lut6_I5_O)        0.326     7.224 r  ALUU/o_output_reg[7]_i_114/O
+                         net (fo=5, routed)           1.067     8.292    ALUU/o_output_reg[7]_i_114_n_1
+    SLICE_X45Y69         LUT6 (Prop_lut6_I0_O)        0.124     8.416 r  ALUU/o_output_reg[7]_i_97/O
+                         net (fo=5, routed)           0.844     9.259    ALUU/o_output_reg[7]_i_97_n_1
+    SLICE_X45Y68         LUT5 (Prop_lut5_I3_O)        0.150     9.409 r  ALUU/o_output_reg[7]_i_87/O
+                         net (fo=3, routed)           0.816    10.226    ALUU/o_output_reg[7]_i_87_n_1
+    SLICE_X43Y68         LUT6 (Prop_lut6_I1_O)        0.326    10.552 r  ALUU/o_output_reg[7]_i_68/O
+                         net (fo=4, routed)           0.994    11.546    ALUU/o_output_reg[7]_i_92_0
+    SLICE_X39Y66         LUT2 (Prop_lut2_I1_O)        0.152    11.698 f  ALUU/o_output_reg[7]_i_46/O
+                         net (fo=1, routed)           0.967    12.664    TL_23/o_output_reg[7]_i_9_0
+    SLICE_X39Y65         LUT6 (Prop_lut6_I1_O)        0.326    12.990 r  TL_23/o_output_reg[7]_i_24/O
+                         net (fo=1, routed)           1.152    14.143    TL_23/o_output_reg[7]_i_24_n_1
+    SLICE_X30Y61         LUT6 (Prop_lut6_I4_O)        0.124    14.267 r  TL_23/o_output_reg[7]_i_9/O
+                         net (fo=1, routed)           0.000    14.267    TL_23/o_output_reg[7]_i_9_n_1
+    SLICE_X30Y61         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    14.780 r  TL_23/o_output_reg[7]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.780    TL_23/o_output_reg[7]_i_1_n_1
+    SLICE_X30Y62         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    14.897 r  TL_23/o_output_reg[11]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    14.897    TL_23/o_output_reg[11]_i_1_n_1
+    SLICE_X30Y63         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.014 r  TL_23/o_output_reg[15]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.014    TL_23/o_output_reg[15]_i_1_n_1
+    SLICE_X30Y64         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.131 r  TL_23/o_output_reg[19]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.131    TL_23/o_output_reg[19]_i_1_n_1
+    SLICE_X30Y65         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.446 r  TL_23/o_output_reg[23]_i_1/O[3]
+                         net (fo=1, routed)           0.000    15.446    ALUU/out[23]
+    SLICE_X30Y65         LDCE                                         r  ALUU/o_output_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 TT_12/o_programCounter_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            TL_23/o_programCounter_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.182ns  (logic 0.128ns (70.172%)  route 0.054ns (29.828%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y57         FDRE                         0.000     0.000 r  TT_12/o_programCounter_reg[0]/C
+    SLICE_X31Y57         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  TT_12/o_programCounter_reg[0]/Q
+                         net (fo=1, routed)           0.054     0.182    TL_23/o_programCounter_reg[31]_0[0]
+    SLICE_X31Y57         FDRE                                         r  TL_23/o_programCounter_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 TL_34/o_resultOfALU_reg[29]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            TL_45/o_resultOfALU_reg[29]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.208ns  (logic 0.141ns (67.855%)  route 0.067ns (32.145%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y69          FDRE                         0.000     0.000 r  TL_34/o_resultOfALU_reg[29]/C
+    SLICE_X9Y69          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  TL_34/o_resultOfALU_reg[29]/Q
+                         net (fo=2, routed)           0.067     0.208    TL_45/D[29]
+    SLICE_X9Y69          FDRE                                         r  TL_45/o_resultOfALU_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][20]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.249ns  (logic 0.141ns (56.593%)  route 0.108ns (43.407%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y68         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][20]/C
+    SLICE_X49Y68         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][20]/Q
+                         net (fo=1, routed)           0.108     0.249    BP/otherProgramCounters_reg[1]_0[20]
+    SLICE_X51Y68         FDRE                                         r  BP/otherProgramCounters_reg[2][20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 TL_34/o_resultOfALU_reg[12]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            TL_45/o_resultOfALU_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.250ns  (logic 0.141ns (56.329%)  route 0.109ns (43.671%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y63          FDRE                         0.000     0.000 r  TL_34/o_resultOfALU_reg[12]/C
+    SLICE_X7Y63          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  TL_34/o_resultOfALU_reg[12]/Q
+                         net (fo=2, routed)           0.109     0.250    TL_45/D[12]
+    SLICE_X5Y63          FDRE                                         r  TL_45/o_resultOfALU_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y57         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][2]/C
+    SLICE_X47Y57         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][2]/Q
+                         net (fo=1, routed)           0.110     0.251    BP/otherProgramCounters_reg[1]_0[2]
+    SLICE_X47Y57         FDRE                                         r  BP/otherProgramCounters_reg[2][2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][30]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][30]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y70         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][30]/C
+    SLICE_X47Y70         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][30]/Q
+                         net (fo=1, routed)           0.110     0.251    BP/otherProgramCounters_reg[1]_0[30]
+    SLICE_X47Y70         FDRE                                         r  BP/otherProgramCounters_reg[2][30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 TL_23/o_sizeOfMemoryData_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            TL_34/o_sizeOfMemoryData_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.251ns  (logic 0.141ns (56.174%)  route 0.110ns (43.826%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y59         FDRE                         0.000     0.000 r  TL_23/o_sizeOfMemoryData_reg[1]/C
+    SLICE_X15Y59         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  TL_23/o_sizeOfMemoryData_reg[1]/Q
+                         net (fo=1, routed)           0.110     0.251    TL_34/o_sizeOfMemoryData_reg[1]_24[1]
+    SLICE_X15Y59         FDRE                                         r  TL_34/o_sizeOfMemoryData_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.255ns  (logic 0.141ns (55.385%)  route 0.114ns (44.615%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y57         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][0]/C
+    SLICE_X44Y57         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][0]/Q
+                         net (fo=1, routed)           0.114     0.255    BP/otherProgramCounters_reg[1]_0[0]
+    SLICE_X44Y57         FDRE                                         r  BP/otherProgramCounters_reg[2][0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][27]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][27]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.255ns  (logic 0.141ns (55.385%)  route 0.114ns (44.615%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y71         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][27]/C
+    SLICE_X48Y71         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][27]/Q
+                         net (fo=1, routed)           0.114     0.255    BP/otherProgramCounters_reg[1]_0[27]
+    SLICE_X48Y71         FDRE                                         r  BP/otherProgramCounters_reg[2][27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 BP/otherProgramCounters_reg[1][4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            BP/otherProgramCounters_reg[2][4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.255ns  (logic 0.141ns (55.385%)  route 0.114ns (44.615%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y59         FDRE                         0.000     0.000 r  BP/otherProgramCounters_reg[1][4]/C
+    SLICE_X48Y59         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  BP/otherProgramCounters_reg[1][4]/Q
+                         net (fo=1, routed)           0.114     0.255    BP/otherProgramCounters_reg[1]_0[4]
+    SLICE_X48Y59         FDRE                                         r  BP/otherProgramCounters_reg[2][4]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

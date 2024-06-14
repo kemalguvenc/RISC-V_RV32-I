@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBench_DataMemory_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestBench_DataMemory" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="420.001 ns"></ZoomEndTime>
+      <Cursor1Time time="274.364 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="143"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/TestBench_DataMemory/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_DataMemory/address">
+      <obj_property name="ElementShortName">address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_DataMemory/dataSize">
+      <obj_property name="ElementShortName">dataSize[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dataSize[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_DataMemory/dataType">
+      <obj_property name="ElementShortName">dataType</obj_property>
+      <obj_property name="ObjectShortName">dataType</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/TestBench_DataMemory/readWriteControl">
+      <obj_property name="ElementShortName">readWriteControl</obj_property>
+      <obj_property name="ObjectShortName">readWriteControl</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_DataMemory/i_data">
+      <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/TestBench_DataMemory/o_data">
+      <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../riscv.srcs/sources_1/new/ClkCounter.vhd" \
+"../../../../riscv.srcs/sources_1/new/WrongBranchCounter.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../riscv.srcs/sources_1/imports/VHDL/ALU.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/BranchPredictioner.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Control_Unit.vhd" \
+"../../../../riscv.srcs/sources_1/new/DataForwarder.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Data_Memory.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Immediate_Expander.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Instruction_Memory.vhd" \
+"../../../../riscv.srcs/sources_1/new/Processor.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Program_Counter.vhd" \
+"../../../../riscv.srcs/sources_1/imports/VHDL/Register_File.vhd" \
+"../../../../riscv.srcs/sources_1/new/Transfer_Layer_1to2.vhd" \
+"../../../../riscv.srcs/sources_1/new/Transfer_Layer_2To3.vhd" \
+"../../../../riscv.srcs/sources_1/new/Transfer_Layer_3To4.vhd" \
+"../../../../riscv.srcs/sources_1/new/Transfer_Layer_4To5.vhd" \
+"../../../../riscv.srcs/sim_1/new/TestBench_Processor.vhd" \
+
+# Do not sort compile order
+nosort
